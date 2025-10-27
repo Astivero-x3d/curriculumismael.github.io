@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Configuración de caracteres UTF-8 para soportar tildes y caracteres especiales -->
+    <meta charset="UTF-8">
+
+    <!-- Configuración responsive para dispositivos móviles -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Icono que aparece en la pestaña del navegador -->
+    <link rel="icon" href="./img/cv.png">
+
+    <!-- Título que aparece en la pestaña del navegador -->
+    <title>Mi Curriculum Web</title>
+
+    <!-- Enlace a la hoja de estilos CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <!-- Fondo de binarios animados -->
+    <!-- Contenedor para el efecto de fondo con binarios cayendo estilo Matrix -->
+    <div class="binary-background" id="binaryBg"></div>
+
+    <!-- Contenedor principal del CV -->
+    <div class="container">
+        <!-- Header - Cabecera con foto y nombre -->
+        <div class="header">
+            <div class="header-content">
+                <!-- Foto de perfil -->
+                <img src="./img/Mi_Foto_De_Perfil.jpg" alt="Foto de perfil" class="profile-img" id="profileImg">
+
+                <!-- Nombre completo (editable con JavaScript al hacer click) -->
+                <h1 id="name">Ismael Astillero García Muñoz</h1>
+
+                <!-- Título profesional (editable con JavaScript al hacer click) -->
+                <p class="subtitle" id="title">Desarrollador Web | Soporte Informático</p>
+            </div>
+        </div>
+
+        <!-- Contenido principal del CV -->
+        <div class="content">
+
+            <!-- Sección: sobre mí -->
+            <div class="section">
+                <h2>Sobre mí</h2>
+                <p class="about-text">
+                    Soy Ismael Astillero García Muñoz, desarrollador web con formación en Desarrollo de Aplicaciones Web y experiencia en HTML, CSS, JavaScript, PHP, Node.js, Angular y MySQL.
+                    Apasionado de la informática y el desarrollo web.
+                    Me entusiasma crear soluciones funcionales que combinen frontend y backend, utilizando tecnologías como HTML, CSS, JavaScript, PHP, Angular y Node.js.
+                </p>
+            </div>
+
+            <!-- Sección: habilidades -->
+            <div class="section">
+                <h2>Habilidades</h2>
+
+                <!-- Contenedor vacío que será llenado dinámicamente con JavaScript -->
+                <div class="skills-grid" id="skillsContainer"></div>
+            </div>
+
+            <!-- Sección: proyectos -->
+            <div class="section">
+                <h2>Proyectos</h2>
+
+                <!-- Proyecto: Hidden Clue -->
+                <div class="project-item">
+                    <div class="item-title">Hidden Clue</div>
+                    <div class="item-subtitle">Reservas de salas de escape rooms</div>
+                    <div class="item-date">Octubre 2025</div>
+                    <div class="item-description">
+                        Proyecto web de reservas de salas de escape room
+                        Hidden Clue es una pagina web que permite a los usuarios reservar salas.
+                    </div>
+                    <!-- Enlace deshabilitado porque el proyecto está en proceso -->
+                    <a style="cursor: not-allowed;" class="project-link" target="_blank">En proceso</a>
+                    <!-- Enlace al repositorio de GitHub del proyecto -->
+                    <a href="https://github.com/Astivero-x3d/Hidden-Clue" class="project-link" target="_blank">Repositorio de github -></a>
+                </div>
+
+                <!-- Proyecto: PixelPower -->
+                <div class="project-item">
+                    <div class="item-title">PixelPower</div>
+                    <div class="item-subtitle">Tienda de videojuegos</div>
+                    <div class="item-date">Junio 2025</div>
+                    <div class="item-description">
+                        Proyecto del TFG grado superior en desarrollo de aplicaciones web de una tienda de videojuegos.
+                    </div>
+                    <!-- Aviso sobre el tiempo de carga del servidor gratuito -->
+                    <p>Importante: La carga puede tardar unos segundos debido a que está en un servidor gratuito (Render)</p>
+                    <!-- Enlace al proyecto desplegado -->
+                    <a href="https://pixelpower.onrender.com" class="project-link">Ver Proyecto →</a>
+                    <!-- Enlace al repositorio de GitHub -->
+                    <a href="https://github.com/Astivero-x3d/PixelPower" class="project-link" target="_blank">Repositorio de github -></a>
+                </div>
+
+                <!-- Proyecto: Astivero x3d -->
+                <div class="project-item">
+                    <div class="item-title">Astivero x3d</div>
+                    <div class="item-subtitle">Mi primer proyecto</div>
+                    <div class="item-date">Julio 2024</div>
+                    <div class="item-description">
+                        Proyecto básico, para ir aprendiendo.
+                    </div>
+                    <!-- Enlace al proyecto en GitHub Pages -->
+                    <a href="https://astivero-x3d.github.io/astiverox3d.github.io" class="project-link" target="_blank">Ver Proyecto →</a>
+                    <!-- Enlace al repositorio de GitHub -->
+                    <a href="https://github.com/Astivero-x3d/astiverox3d.github.io" class="project-link" target="_blank">Repositorio de github -></a>
+                </div>
+            </div>
+
+            <!-- Sección: experiencia laboral -->
+            <div class="section">
+                <h2>Experiencia</h2>
+
+                <!-- Experiencia: Grupo Tecon -->
+                <div class="experience-item">
+                    <div class="item-title">Programador Web</div>
+                    <div class="item-subtitle">Grupo Tecon - Contrato de practicas</div>
+                    <div class="item-date">Abril 2025 - Junio 2025, Albacete</div>
+                    <div class="item-description">
+                        Contrato de prácticas de CFGS de Desarrollo De Aplicaciones Web
+                        <ul>
+                            <li>Mantenimiento de páginas web de WordPress.</li>
+                            <li>Creación de páginas web con WordPress plugin Elementor.</li>
+                            <li>Gestión de panel de administración (Angular Frontend y PHP de backend)</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Experiencia: Autoescuela Prisma -->
+                <div class="experience-item">
+                    <div class="item-title">Soporte Informático</div>
+                    <div class="item-subtitle">Autoescuela Prisma - Contrato de practicas</div>
+                    <div class="item-date">Marzo 2023 - Junio 2023, Daimiel</div>
+                    <div class="item-description">
+                        Contrato de prácticas de CFGM de Sistemas Microinformáticos Y Redes
+                        <ul>
+                            <li>Revisión de ordenadores.</li>
+                            <li>Limpieza de hardware.</li>
+                            <li>Creación de página web con Google Sites de Autoescuela Prisma.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sección: certificaciones y cursos -->
+            <div class="section">
+                <h2>Certificaciones / Cursos</h2>
+                <div class="certifications-grid">
+
+                    <!-- Certificado: Curso de iniciación al desarrollo con IA -->
+                    <div class="certification-item">
+                        <div class="item-title">Curso de Iniciación al Desarrollo con IA</div>
+                        <div class="item-subtitle">BIGSEO</div>
+                        <div class="item-date">2025</div>
+                        <!-- Enlace a Google Drive con la credencial -->
+                        <div class="item-description"><a href="https://drive.google.com/file/d/1T2IgCLvvyQCpvdrgKoRm8bMXbtwmhxgk/view" target="_blank">Mostrar credencial -></a></div>
+                    </div>
+
+                    <!-- Certificado: IA en práctica para el entorno de trabajo -->
+                    <div class="certification-item">
+                        <div class="item-title">IA en práctica para el entorno de trabajo</div>
+                        <div class="item-subtitle">thePower</div>
+                        <div class="item-date">2025</div>
+                        <!-- Enlace a certificado verificable online -->
+                        <div class="item-description"><a href="https://verified.sertifier.com/es/verify/01093405859390" target="_blank">Mostrar credencial -></a></div>
+                    </div>
+
+                    <!-- Certificado: Curso de Fundamentos de React -->
+                    <div class="certification-item">
+                        <div class="item-title">Curso de Fundamentos de React</div>
+                        <div class="item-subtitle">OpenWebinars</div>
+                        <div class="item-date">2025</div>
+                        <!-- Enlace a OpenWebinars con la credencial -->
+                        <div class="item-description"><a href="https://openwebinars.net/cert/GXiP" target="_blank">Mostrar credencial -></a></div>
+                    </div>
+
+                    <!-- Certificado: Curso de Creando un CRUD con PHP, MySQL, HTML, CSS y JavaScript -->
+                    <div class="certification-item">
+                        <div class="item-title">Curso de Creando un CRUD con PHP, MySQL, HTML, CSS y JavaScript</div>
+                        <div class="item-subtitle">OpenWebinars</div>
+                        <div class="item-date">2025</div>
+                        <!-- Enlace a OpenWebinars con la credencial -->
+                        <div class="item-description"><a href="https://openwebinars.net/cert/gE3f" target="_blank">Mostrar credencial -></a></div>
+                    </div>
+
+                    <!-- Certificado: Curso de Inteligencia Artificial Y Productividad -->
+                    <div class="certification-item">
+                        <div class="item-title">Curso de Inteligencia Artificial Y Productividad</div>
+                        <div class="item-subtitle">Santander Open Academy</div>
+                        <div class="item-date">2025</div>
+                        <!-- Descarga directa del certificado en PDF local -->
+                        <div class="item-description"><a href="./PDF/Certificado-Ismael-InteligenciaArtifical-Y-Productividad.pdf" target="_blank" download="Certificado-Ismael-InteligenciaArtifical-Y-Productividad.pdf">Mostrar credencial -></a></div>
+                    </div>
+                    
+                    <!-- Certificado: Curso de Introducción a la programación con Pseudocódigo -->
+                    <div class="certification-item">
+                        <div class="item-title">Curso de Introducción a la programación con Pseudocódigo</div>
+                        <div class="item-subtitle">OpenWebinars</div>
+                        <div class="item-date">2025</div>
+                        <!-- Enlace a OpenWebinars con la credencial -->
+                        <div class="item-description"><a href="https://openwebinars.net/cert/Oh7I" target="_blank">Mostrar credencial -></a></div>
+                    </div>
+
+                    <!-- Certificado: >Curso de Fundamentos de JavaScript -->
+                    <div class="certification-item">
+                        <div class="item-title">Curso de Fundamentos de JavaScript</div>
+                        <div class="item-subtitle">OpenWebinars</div>
+                        <div class="item-date">2025</div>
+                        <!-- Enlace a OpenWebinars con la credencial -->
+                        <div class="item-description"><a href="https://openwebinars.net/cert/u3sY" target="_blank">Mostrar credencial -></a></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sección: educación -->
+            <div class="section">
+                <h2>Educación</h2>
+
+                <!-- Formación: Grado Superior de Desarrollo De Aplicaciones Web -->
+                <div class="education-item">
+                    <div class="item-title">Ciclo Formativo Grado Superior de Desarrollo De Aplicaciones Web</div>
+                    <div class="item-subtitle">IES Amparo Sanz, Albacete</div>
+                    <div class="item-date">Septiembre 2023 - Junio 2025</div>
+                </div>
+
+                <!-- Formación: Grado Medio de Sistemas Microinformáticos y Redes -->
+                <div class="education-item">
+                    <div class="item-title">Ciclo Formativo Grado Medio de Sistemas Microinformáticos y Redes</div>
+                    <div class="item-subtitle">IES Estados del Duque, Malagón, Ciudad Real</div>
+                    <div class="item-date">Septiembre 2021 - Junio 2023</div>
+                </div>
+
+                <!-- Formación: Educación Secundaria Obligatoria -->
+                <div class="education-item">
+                    <div class="item-title">Educación Secundaria Obligatoria</div>
+                    <div class="item-subtitle">IES Ojos Del Guadiana, Daimiel, Ciudad Real</div>
+                    <div class="item-date">Septiembre 2017 - Junio 2021</div>
+                </div>
+                
+            </div>
+
+            <!-- Sección: Contacto y redes sociales -->
+            <div class="section">
+                <h2>Contacto</h2>
+                <div class="contact-info">
+
+                    <!-- Email -->
+                    <div class="contact-item">
+                        <span class="contact-icon">📧</span>
+                        <span><a href="mailto:ismaelast2005@gmail.com">ismaelast2005@gmail.com</a></span>
+                    </div>
+
+                    <!-- Teléfono -->
+                    <div class="contact-item">
+                        <span class="contact-icon">📱</span>
+                        <span><a href="tel:744483928">+34 744 48 39 28</a></span>
+                    </div>
+
+                    <!-- Portofolio web -->
+                    <div class="contact-item">
+                        <span class="contact-icon">🌐</span>
+                        <span><a href="https://ismaelastillero.es" target="_blank">ismaelastillero.es</a></span>
+                    </div>
+
+                    <!-- Linkedin -->
+                    <div class="contact-item">
+                        <span class="contact-icon">💼</span>
+                        <span><a href="https://www.linkedin.com/in/ismael-astillero-garcía-muñoz-308b472a7" target="_blank">Ismael Astillero García Muñoz (Linkedin)</a></span>
+                    </div>
+
+                    <!-- Github -->
+                    <div class="contact-item">
+                        <span class="contact-icon">🐙</span>
+                        <span><a href="https://github.com/Astivero-x3d">github.com/Astivero-x3d</a></span>
+                    </div>
+
+                    <!-- Instagram -->
+                    <div class="contact-item">
+                        <span class="contact-icon">📷</span>
+                        <span><a href="https://www.instagram.com/ismaastillero">@ismaastillero (instagram)</a></span>
+                    </div>
+
+                    <!-- Twitter -->
+                    <div class="contact-item">
+                        <span class="contact-icon">🐦</span>
+                        <span><a href="https://x.com/IsmaAstillero">@IsmaAstillero (twitter)</a></span>
+                    </div>
+                </div>
+
+                <!-- Botón de descarga del CV en formato PDF -->
+                <a href="./PDF/CV-Ismael-Astillero-Garcia-Muñoz.pdf" class="btn-download" download="CV-Ismael-Astillero-Garcia-Muñoz.pdf">
+                    📥 Descargar CV en PDF
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Enlace al archivo JavaScript que maneja la interactividad -->
+    <script src="./js/script.js"></script>
+</body>
+</html>

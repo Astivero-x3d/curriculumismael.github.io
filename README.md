@@ -13,6 +13,14 @@ Puedes acceder a la versión publicada del currículum en GitHub Pages a través
 
 ## 📄 Descripción
 He creado este currículum web desde cero aplicando mis conocimientos en desarrollo frontend. 
-El sitio incluye secciones como **sobre mí**, **habilidades**, **proyectos**, **experiencia**, **certificaciones / cursos**, **educación** y **contacto**, organizadas con un diseño limpio y responsive.  
+El sitio incluye estas secciones:
+**- sobre mí** 
+**- habilidades** 
+**- proyectos**
+**- experiencia** 
+**- certificaciones / cursos**
+**- educación** 
+**- contacto** 
+Organizadas con un diseño limpio y responsive.  
 
-✉️ *Desarrollado por Ismael Astillero García Muñoz*  
+✉️ *Desarrollado por Ismael Astillero García Muñoz*
